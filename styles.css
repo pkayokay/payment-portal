@@ -19,3 +19,22 @@
 .login-form__password-text {
   font-size: .8em;
 }
+
+.tabs {
+  font-size: .8em;
+}
+
+.tabs li.is-active a {
+  color: #3273dc!important;
+  border-bottom-color: #3273dc!important;
+}
+
+@media (max-width: 420px) {
+  .tabs__icon {
+    display: none;
+  }
+
+  .tabs__link{
+    padding: .5em 0.7em !important;
+  }
+}
