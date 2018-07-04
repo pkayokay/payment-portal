@@ -1,16 +1,59 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" href="" type="image/x-icon" />
-    <title>Payment Portal</title>
-    <meta name="description" content="A payment portal for all your needs">
-  </head>
-  <body>
-  <script src="./js/vue.min.js"></script>
-  <script src="./js/main.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="" type="image/x-icon" />
+  <title>Payment Portal</title>
+  <meta name="description" content="A payment portal for all your needs">
+</head>
+<body>
+  <section class="hero has-background-link is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <form class="login-form has-background-white" action="./portal.html">
+          <h2 class="login-form__heading has-text-black">Login to Your Account</h2>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input required class="input" type="email" placeholder="Email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left">
+              <input required class="input" type="password" placeholder="Password">
+              <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <input type="checkbox">
+            <span class="login-form__password-text">Remember my login</span>
+          </div>
+          <div class="field">
+            <p class="control center">
+              <button class="button is-success">
+                Login
+              </button>
+            </p>
+          </div>
+          <div class="field center">
+            <a href="#" class="login-form__password-text has-text-black-bis">Forgot your password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script src="./js/vue.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
 </html>
