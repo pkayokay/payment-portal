@@ -1,24 +1,27 @@
 Vue.component('tab-item', {
   props: ['items'],
   template: `
-    <li :class="is-active">
-    <a class="tabs__link">
-      <span class="tabs__icon icon is-small">
-        <i class="fas" :class="items.icon" aria-hidden="true"></i>
-      </span>
-      <span>{{ items.text }}</span>
-    </a>
-  </li>`
+    <li>
+      <a class="tabs__link">
+        <span class="tabs__icon icon is-small">
+          <i class="fas" :class="items.icon" aria-hidden="true"></i>
+        </span>
+        <span>{{ items.text }}</span>
+      </a>
+    </li>`
 })
 
 var tabs = new Vue({
   el: '#tabs',
   data: {
     tabList: [
-      { id: 0, text: 'Dashboard', icon: 'fa-tachometer-alt', isActive: true},
-      { id: 1, text: 'Payment', icon: 'fa-dollar-sign'},
-      { id: 2, text: 'Activity', icon: 'fa-history'},
-      { id: 3, text: 'Settings', icon: 'fa-cog'}
-    ],
+      { id: 0, text: 'Dashboard', icon: 'fa-tachometer-alt', active: true},
+      { id: 1, text: 'Payment', icon: 'fa-dollar-sign', active: false},
+      { id: 2, text: 'Activity', icon: 'fa-history', active: false},
+      { id: 3, text: 'Settings', icon: 'fa-cog', active: false}
+    ]
+  },
+  computed: {
+
   }
 })

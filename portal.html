@@ -21,6 +21,8 @@
           v-for="tab in tabList"
           :items="tab"
           :key="tab.id"
+          :class="{'is-active': tab.active }"
+          @click=""
         >
         </tab-item>
       </ul>
