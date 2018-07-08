@@ -1,3 +1,4 @@
+/* login */
 .center {
   text-align: center !important;
 }
@@ -18,6 +19,12 @@
 
 .login-form__password-text {
   font-size: .8em;
+}
+
+/* Payment portal */
+
+.user-portal {
+  padding: 20px 0;
 }
 
 .tabs li.is-active a {

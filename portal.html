@@ -8,43 +8,21 @@
   <link rel="icon" href="" type="image/x-icon" />
   <title>Payment Portal</title>
   <meta name="description" content="A payment portal for all your needs">
+  <!-- Development Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- Production Vue -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 </head>
 <body>
-  <section>
-    <div class="tabs is-centered">
-      <ul>
-        <li class="is-active">
-          <a class="tabs__link">
-            <span class="tabs__icon icon is-small">
-              <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-            </span>
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a class="tabs__link">
-            <span class="tabs__icon icon is-small">
-              <i class="fas fa-dollar-sign" aria-hidden="true"></i>
-            </span>
-            <span>Payment</span>
-          </a>
-        </li>
-        <li>
-          <a class="tabs__link">
-            <span class="tabs__icon icon is-small">
-              <i class="fas fa-history" aria-hidden="true"></i>
-            </span>
-            <span>Activity</span>
-          </a>
-        </li>
-        <li>
-          <a class="tabs__link">
-            <span class="tabs__icon icon is-small">
-              <i class="fas fa-cog" aria-hidden="true"></i>
-            </span>
-            <span>Settings</span>
-          </a>
-        </li>
+  <section class="user-portal">
+    <div class="tabs is-centered is-boxed">
+      <ul id="tabs">
+        <tab-item
+          v-for="tab in tabList"
+          v-bind:items="tab"
+          v-bind:key="tab.id"
+        >
+        </tab-item>
       </ul>
     </div>
     <div>
@@ -54,10 +32,6 @@
 
   <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
   crossorigin="anonymous"></script>
-  <!-- Development Vue -->
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <!-- Production Vue -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
   <script src="./js/main.js"></script>
 </body>
 </html>
