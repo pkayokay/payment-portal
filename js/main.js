@@ -23,7 +23,10 @@ var tabs = new Vue({
   },
   methods: {
     toggleActive: function(tab) {
-      tab.active = !tab.active
+      this.tabList.map(item => {
+        item.active = false
+      })
+      tab.active = true
     }
   }
 })
