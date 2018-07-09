@@ -1,3 +1,4 @@
+// tab item
 Vue.component('tab-item', {
   props: ['items'],
   template: `
@@ -30,3 +31,13 @@ var tabs = new Vue({
     }
   }
 })
+
+
+// tab container
+Vue.component('tab-container', {
+  props: ['items'],
+  template: ``
+})
+
+
+// tab tiles
