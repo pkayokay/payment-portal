@@ -22,7 +22,7 @@
           :items="tab"
           :key="tab.id"
           :class="{'is-active': tab.active }"
-          @click=""
+          @click.native="toggleActive"
         >
         </tab-item>
       </ul>

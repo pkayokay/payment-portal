@@ -21,7 +21,10 @@ var tabs = new Vue({
       { id: 3, text: 'Settings', icon: 'fa-cog', active: false}
     ]
   },
-  computed: {
-
+  methods: {
+    toggleActive: function() {
+      this.tabList[0].active = !this.tabList[0].active
+      console.log(this.tabList[0].active)
+    }
   }
 })
