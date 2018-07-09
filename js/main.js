@@ -34,10 +34,15 @@ var tabs = new Vue({
 
 
 // tab container
+// conditionally render container based on what tab is clicked, fill in title.
+// these containers will be precreated in the html.
+
 Vue.component('tab-container', {
   props: ['items'],
   template: ``
 })
 
-
-// tab tiles
+// tab tile
+// Create different tiles that can be injected into tab container
+// ex. One for "Latest activity", "Payment", and "Dashboard"..which will have repeating components.
+// for settings there may need to be a separate one since it's different.
